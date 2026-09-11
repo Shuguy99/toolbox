@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Generator — Free Online Tool | ToolBox</title>
+  <meta name="description" content="Generate free QR codes online instantly. Convert any text or URL into a QR code and download it as PNG. No signup required, works in your browser.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../index.html" class="logo">🧰 ToolBox</a>
+    <span class="tagline">QR Code Generator</span>
+  </nav>
+
+  <main class="tool-page">
+    <a href="../index.html" class="back-link">← All tools</a>
+    <h1>QR Code Generator</h1>
+    <p class="subtitle">Generate QR codes from any text or URL. Free, fast, and private — everything runs in your browser.</p>
+
+    <div class="tool-section">
+      <textarea id="qrInput" placeholder="Enter text or URL… e.g. https://example.com" rows="4"></textarea>
+      <div class="color-scheme-row">
+        <button class="color-dot active" data-fg="#0a0a0f" title="Dark" style="background:#0a0a0f"></button>
+        <button class="color-dot" data-fg="#6366f1" title="Indigo" style="background:#6366f1"></button>
+        <button class="color-dot" data-fg="#16a34a" title="Green" style="background:#16a34a"></button>
+        <button class="color-dot" data-fg="#dc2626" title="Red" style="background:#dc2626"></button>
+        <button class="color-dot" data-fg="#2563eb" title="Blue" style="background:#2563eb"></button>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-primary" id="generateBtn">Generate QR Code</button>
+        <button class="btn btn-secondary" id="downloadBtn" disabled>Download PNG</button>
+      </div>
+    </div>
+
+    <div class="tool-section">
+      <h2>Result</h2>
+      <div class="output-area" id="qrOutput">
+        <span>Enter text above and click "Generate"</span>
+      </div>
+    </div>
+
+    <div class="tool-section">
+      <h2>What is a QR Code?</h2>
+      <p>A QR Code (Quick Response Code) is a type of two-dimensional barcode that can store URLs, text, contact information, Wi-Fi credentials, and more. When scanned with a smartphone camera, it instantly opens the encoded content.</p>
+      <br>
+      <h2>Use Cases</h2>
+      <p>• Share website links at events and business cards<br>• Create Wi-Fi password codes for guests<br>• Link to menus, payments, and promo pages<br>• Encode contact details (vCard)<br>• Track products and marketing campaigns</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ToolBox. All tools run in your browser — your data stays with you.</p>
+  </footer>
+
+  <div class="copy-toast" id="toast">Copied!</div>
+  <script src="../js/qrcode.min.js"></script>
+  <script src="../js/qr-code.js"></script>
+</body>
+</html>

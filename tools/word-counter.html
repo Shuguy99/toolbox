@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Counter — Count Words & Characters | ToolBox</title>
+  <meta name="description" content="Count words, characters, sentences, and paragraphs in real time. Free online word and character counter that works instantly in your browser.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../index.html" class="logo">🧰 ToolBox</a>
+    <span class="tagline">Word Counter</span>
+  </nav>
+
+  <main class="tool-page">
+    <a href="../index.html" class="back-link">← All tools</a>
+    <h1>Word & Character Counter</h1>
+    <p class="subtitle">Count words, characters, sentences, and paragraphs in real time as you type.</p>
+
+    <div class="tool-section">
+      <textarea id="textInput" placeholder="Start typing or paste your text here…" rows="10"></textarea>
+    </div>
+
+    <div class="tool-section">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-value" id="statWords">0</span>
+          <span class="stat-label">Words</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value" id="statChars">0</span>
+          <span class="stat-label">Characters</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value" id="statCharsNoSpaces">0</span>
+          <span class="stat-label">Chars (no spaces)</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value" id="statSentences">0</span>
+          <span class="stat-label">Sentences</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value" id="statParagraphs">0</span>
+          <span class="stat-label">Paragraphs</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value" id="statReadingTime">0</span>
+          <span class="stat-label">Reading time (min)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="tool-section">
+      <h2>Why Word Count Matters</h2>
+      <p>Word count is essential for writers, students, SEO professionals, and content creators. Many platforms and assignments come with minimum or maximum length requirements. This counter helps you check content length, estimate reading time, and optimize your writing for different formats.</p>
+      <br>
+      <p><strong>Reading time estimate:</strong> Based on an average reading speed of 200 words per minute.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ToolBox. All tools run in your browser — your data stays with you.</p>
+  </footer>
+
+  <script src="../js/counter.js"></script>
+</body>
+</html>

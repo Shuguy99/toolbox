@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON Formatter — Format & Validate JSON Online | ToolBox</title>
+  <meta name="description" content="Format, validate, and beautify JSON data online. Free JSON formatter and validator with minify option. Works instantly in your browser.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../index.html" class="logo">🧰 ToolBox</a>
+    <span class="tagline">JSON Formatter</span>
+  </nav>
+
+  <main class="tool-page">
+    <a href="../index.html" class="back-link">← All tools</a>
+    <h1>JSON Formatter & Validator</h1>
+    <p class="subtitle">Format, validate, and minify JSON data. All processing happens locally in your browser.</p>
+
+    <div class="tool-section">
+      <h2>Input</h2>
+      <textarea id="jsonInput" placeholder='{"name": "ToolBox", "tools": ["QR", "Passwords"], "free": true}' rows="10"></textarea>
+      <div class="btn-group">
+        <button class="btn btn-primary" id="formatBtn">Format</button>
+        <button class="btn btn-secondary" id="minifyBtn">Minify</button>
+      </div>
+    </div>
+
+    <div class="tool-section">
+      <h2>Output</h2>
+      <textarea id="jsonOutput" placeholder="Formatted JSON will appear here…" rows="10" readonly></textarea>
+      <div id="statusMessage"></div>
+      <div class="btn-group">
+        <button class="btn btn-secondary" id="copyBtn">Copy to Clipboard</button>
+      </div>
+    </div>
+
+    <div class="tool-section">
+      <h2>JSON Explained</h2>
+      <p>JSON (JavaScript Object Notation) is a lightweight data-interchange format used by APIs, configuration files, and databases. It's human-readable and supported by virtually every programming language.</p>
+      <br>
+      <p>This tool validates your JSON, formats it with proper indentation for readability, and minifies it to save space — perfect for API debugging, configuration reviews, and data transfer optimization.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ToolBox. All tools run in your browser — your data stays with you.</p>
+  </footer>
+
+  <div class="copy-toast" id="toast">Copied!</div>
+  <script src="../js/app.js"></script>
+  <script src="../js/json-formatter.js"></script>
+</body>
+</html>
