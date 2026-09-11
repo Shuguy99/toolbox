@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HEX to RGB Color Converter — Free Online Tool | ToolBox</title>
+  <meta name="description" content="Convert HEX colors to RGB and RGB to HEX instantly. Free online color converter with live preview. No signup required.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../index.html" class="logo">🧰 ToolBox</a>
+    <span class="tagline">HEX to RGB Converter</span>
+  </nav>
+
+  <main class="tool-page">
+    <a href="../index.html" class="back-link">← All tools</a>
+    <h1>HEX to RGB Color Converter</h1>
+    <p class="subtitle">Convert colors between HEX and RGB formats with a live preview swatch.</p>
+
+    <div class="tool-section">
+      <h2>Hex Color</h2>
+      <div class="controls-row">
+        <input type="text" id="hexInput" value="#6366f1" placeholder="#RRGGBB" spellcheck="false">
+        <button class="btn btn-primary" id="hexApply">Convert</button>
+      </div>
+      <div id="hexError" class="error-text"></div>
+    </div>
+
+    <div class="tool-section">
+      <h2>RGB Color</h2>
+      <div class="controls-row">
+        <input type="number" id="rInput" min="0" max="255" value="99" style="max-width:90px">
+        <input type="number" id="gInput" min="0" max="255" value="102" style="max-width:90px">
+        <input type="number" id="bInput" min="0" max="255" value="241" style="max-width:90px">
+        <button class="btn btn-primary" id="rgbApply">Convert</button>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-secondary" id="copyRgb">Copy RGB</button>
+      </div>
+    </div>
+
+    <div class="tool-section">
+      <h2>Preview</h2>
+      <div class="output-area" id="preview">#6366f1 → rgb(99, 102, 241)</div>
+      <div style="width:100%;height:60px;border-radius:8px;margin-top:12px" id="swatch"></div>
+    </div>
+
+    <div class="tool-section">
+      <h2>About HEX and RGB</h2>
+      <p>HEX and RGB are two ways to represent the same color. HEX (#RRGGBB) is used in web design and HTML/CSS, while RGB (100, 200, 300) is used in design software, image editors, and programming.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ToolBox. All tools run in your browser — your data stays with you.</p>
+  </footer>
+
+  <div class="copy-toast" id="toast">Copied!</div>
+  <script src="../js/app.js"></script>
+  <script src="../js/color.js"></script>
+</body>
+</html>

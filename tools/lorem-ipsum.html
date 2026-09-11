@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lorem Ipsum Generator — Free Online Tool | ToolBox</title>
+  <meta name="description" content="Generate lorem ipsum placeholder text for free. Choose paragraphs, words, or bytes. Copy to clipboard instantly.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../index.html" class="logo">🧰 ToolBox</a>
+    <span class="tagline">Lorem Ipsum Generator</span>
+  </nav>
+
+  <main class="tool-page">
+    <a href="../index.html" class="back-link">← All tools</a>
+    <h1>Lorem Ipsum Generator</h1>
+    <p class="subtitle">Generate classic placeholder text for design mockups, layouts, and content previews.</p>
+
+    <div class="tool-section">
+      <h2>Options</h2>
+      <div class="controls-row">
+        <label>Paragraphs</label>
+        <input type="range" id="countSlider" min="1" max="10" value="3">
+        <span class="slider-value" id="countValue">3</span>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-primary" id="generateBtn">Generate</button>
+        <button class="btn btn-secondary" id="copyBtn">Copy</button>
+      </div>
+    </div>
+
+    <div class="tool-section">
+      <h2>Result</h2>
+      <textarea id="output" rows="12" readonly></textarea>
+    </div>
+
+    <div class="tool-section">
+      <h2>About Lorem Ipsum</h2>
+      <p>Lorem ipsum is placeholder text commonly used by designers and developers to fill layouts before real content is ready. It's based on a scrambled Latin text, which makes it ideal for testing typography, spacing, and overall visual design.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ToolBox. All tools run in your browser — your data stays with you.</p>
+  </footer>
+
+  <div class="copy-toast" id="toast">Copied!</div>
+  <script src="../js/app.js"></script>
+  <script src="../js/lorem-ipsum.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unix Timestamp Converter — Free Online Tool | ToolBox</title>
+  <meta name="description" content="Convert Unix timestamps to readable dates and back. Free online epoch time converter with live clock. Works in your browser.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../index.html" class="logo">🧰 ToolBox</a>
+    <span class="tagline">Unix Timestamp Converter</span>
+  </nav>
+
+  <main class="tool-page">
+    <a href="../index.html" class="back-link">← All tools</a>
+    <h1>Unix Timestamp Converter</h1>
+    <p class="subtitle">Convert Unix epoch timestamps to human-readable dates and back. Live current timestamp included.</p>
+
+    <div class="tool-section">
+      <h2>Current Timestamp</h2>
+      <div class="output-area has-content" id="currentTs">—</div>
+      <div class="btn-group">
+        <button class="btn btn-secondary" id="copyTs">Copy</button>
+      </div>
+    </div>
+
+    <div class="tool-section">
+      <h2>Timestamp → Date</h2>
+      <div class="controls-row">
+        <input type="text" id="tsToDate" placeholder="e.g. 1768000000" spellcheck="false">
+        <button class="btn btn-primary" id="tsToDateBtn">Convert</button>
+      </div>
+      <div class="output-area has-content" id="dateResult">—</div>
+    </div>
+
+    <div class="tool-section">
+      <h2>Date → Timestamp</h2>
+      <div class="controls-row">
+        <input type="datetime-local" id="dateToTs">
+        <button class="btn btn-primary" id="dateToTsBtn">Convert</button>
+      </div>
+      <div class="output-area has-content" id="tsResult">—</div>
+    </div>
+
+    <div class="tool-section">
+      <h2>What is a Unix Timestamp?</h2>
+      <p>The Unix timestamp is the number of seconds since January 1, 1970, 00:00:00 UTC. It's a universal time format used in APIs, databases (MySQL, PostgreSQL), and programming languages for storing and exchanging times without timezone ambiguity.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ToolBox. All tools run in your browser — your data stays with you.</p>
+  </footer>
+
+  <div class="copy-toast" id="toast">Copied!</div>
+  <script src="../js/app.js"></script>
+  <script src="../js/timestamp.js"></script>
+</body>
+</html>

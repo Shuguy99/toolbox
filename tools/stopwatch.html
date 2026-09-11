@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Stopwatch — Free Timer | ToolBox</title>
+  <meta name="description" content="Free online stopwatch with lap times. Measures time accurately in your browser with millisecond precision. Start, pause, reset.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../index.html" class="logo">🧰 ToolBox</a>
+    <span class="tagline">Stopwatch</span>
+  </nav>
+
+  <main class="tool-page">
+    <a href="../index.html" class="back-link">← All tools</a>
+    <h1>Online Stopwatch</h1>
+    <p class="subtitle">Precision timer with lap recording. Works entirely in your browser.</p>
+
+    <div class="tool-section" style="text-align:center">
+      <div id="display" style="font-size:3rem;font-weight:800;font-variant-numeric:tabular-nums;font-family:monospace;margin:20px 0">00:00.00</div>
+      <div class="btn-group" style="justify-content:center">
+        <button class="btn btn-primary" id="startBtn">Start</button>
+        <button class="btn btn-secondary" id="lapBtn" disabled>Lap</button>
+        <button class="btn btn-secondary" id="resetBtn">Reset</button>
+      </div>
+    </div>
+
+    <div class="tool-section">
+      <h2>Laps</h2>
+      <div id="laps" style="font-family:monospace;white-space:pre-wrap"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ToolBox. All tools run in your browser — your data stays with you.</p>
+  </footer>
+
+  <script src="../js/stopwatch.js"></script>
+</body>
+</html>

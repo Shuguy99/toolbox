@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Converter — UPPERCASE / lowercase / Title Case | ToolBox</title>
+  <meta name="description" content="Convert text to UPPERCASE, lowercase, Title Case, Sentence case, or camelCase instantly. Free online text case converter.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../index.html" class="logo">🧰 ToolBox</a>
+    <span class="tagline">Case Converter</span>
+  </nav>
+
+  <main class="tool-page">
+    <a href="../index.html" class="back-link">← All tools</a>
+    <h1>Text Case Converter</h1>
+    <p class="subtitle">Convert text between uppercase, lowercase, title case, sentence case, and camelCase.</p>
+
+    <div class="tool-section">
+      <h2>Input</h2>
+      <textarea id="input" placeholder="Type or paste text here…" rows="8"></textarea>
+      <div class="btn-group">
+        <button class="btn btn-primary" data-case="upper">UPPERCASE</button>
+        <button class="btn btn-secondary" data-case="lower">lowercase</button>
+        <button class="btn btn-secondary" data-case="title">Title Case</button>
+        <button class="btn btn-secondary" data-case="sentence">Sentence case</button>
+        <button class="btn btn-secondary" data-case="camel">camelCase</button>
+      </div>
+    </div>
+
+    <div class="tool-section">
+      <h2>Output</h2>
+      <textarea id="output" rows="8" readonly></textarea>
+      <div class="btn-group">
+        <button class="btn btn-secondary" id="copyBtn">Copy to Clipboard</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ToolBox. All tools run in your browser — your data stays with you.</p>
+  </footer>
+
+  <div class="copy-toast" id="toast">Copied!</div>
+  <script src="../js/app.js"></script>
+  <script src="../js/case-converter.js"></script>
+</body>
+</html>

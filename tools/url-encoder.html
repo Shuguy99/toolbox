@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URL Encoder / Decoder — Free Online Tool | ToolBox</title>
+  <meta name="description" content="Encode and decode URL strings online for free. Convert special characters to URL-safe format with percent-encoding. Works in your browser.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../index.html" class="logo">🧰 ToolBox</a>
+    <span class="tagline">URL Encoder / Decoder</span>
+  </nav>
+
+  <main class="tool-page">
+    <a href="../index.html" class="back-link">← All tools</a>
+    <h1>URL Encoder / Decoder</h1>
+    <p class="subtitle">Percent-encode URLs and query strings, or decode them back to readable text.</p>
+
+    <div class="tool-section">
+      <h2>Input</h2>
+      <textarea id="input" placeholder="Enter text or URL to encode/decode…" rows="6"></textarea>
+      <div class="btn-group">
+        <button class="btn btn-primary" id="encodeBtn">Encode</button>
+        <button class="btn btn-secondary" id="decodeBtn">Decode</button>
+      </div>
+      <div id="errorMessage" class="error-text"></div>
+    </div>
+
+    <div class="tool-section">
+      <h2>Output</h2>
+      <textarea id="output" placeholder="Result will appear here…" rows="6" readonly></textarea>
+      <div class="btn-group">
+        <button class="btn btn-secondary" id="copyBtn">Copy to Clipboard</button>
+      </div>
+    </div>
+
+    <div class="tool-section">
+      <h2>What is URL Encoding?</h2>
+      <p>URL encoding (percent-encoding) replaces unsafe characters in URLs with a '%' followed by two hexadecimal digits. For example, a space becomes %20 and a Hebrew or Cyrillic character becomes %D0%A1. This keeps URLs valid for parsing by browsers and servers.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ToolBox. All tools run in your browser — your data stays with you.</p>
+  </footer>
+
+  <div class="copy-toast" id="toast">Copied!</div>
+  <script src="../js/app.js"></script>
+  <script src="../js/url-encoder.js"></script>
+</body>
+</html>
